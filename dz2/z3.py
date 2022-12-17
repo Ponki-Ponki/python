@@ -3,4 +3,10 @@
 # Пример:
 # - Для n=4 {1: 2, 2: 2.25, 3: 2.37, 4: 2.44}
 
+n = int(input(""))
+answer = {}
 
+for i in range(1, n+1):
+    answer[i] = round((1 + 1/i)**i, 2)
+
+print(f"Для n={n}  {answer}")
