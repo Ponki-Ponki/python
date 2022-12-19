@@ -21,10 +21,15 @@ for i in range(-n,n+1):
     list.append(i)
 
 print(f"{list}")
-if position[0] < len(list) and position[1] < len(list):
-    sum = list[position[0]] + list[position[1]]
-    print(f"Позиции элементов {position[0]} и {position[1]}")
-    print(f"Значения элементов в этих позициях:  {list[position[0]]} и {list[position[1]]}")
-    print(f"Их сумма: {sum}")
-else:
-    print("ERROR! Позиции вне диапазона значений.")
+
+proiz = 1
+for i in position:
+    if i < len(list):
+        proiz *= list[i]
+        
+for i in position:
+    print(f"Позиция: {i}  Элемент в этой позиции: {list[i]}")
+
+print(f"Их произведение: {proiz}")      
+
+
