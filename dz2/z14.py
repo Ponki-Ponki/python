@@ -9,7 +9,7 @@ num = input("Введите число: ")
 
 sum = 0
 for i in range(0,len(num)):
-    if num[i] != "," and num[i]!= "-":
+    if num[i] != "," and num[i]!= "-" and num[i]!= ".":
         sum += int(num[i])
 
 print(f"Сумма чисел из числа {num} -> {sum}")
