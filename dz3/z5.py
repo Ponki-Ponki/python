@@ -13,9 +13,12 @@ def fibon(n):
 
 
 n = int(input('Введите длину ряда: '))
-result = [0]
 
-for i in range(1, n+1):
-    result.append(fibon(i))
-    result.insert(0, ((-1)**(i+1))*fibon(i))
-print(result)
+def fibon_and_not_fibon(n):
+    result = [0]
+    for i in range(1, n+1):
+        result.append(fibon(i))
+        result.insert(0, ((-1)**(i+1))*fibon(i))
+    return result
+
+print(fibon_and_not_fibon(n))

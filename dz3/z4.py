@@ -18,6 +18,6 @@ n = int(input("Input value "))
 print(f"{n}:  ", end="")
 convert_to_01(n)
 
-for i in range(10 , 100, 5):
-    print(f"{i}:  ", end="")
-    convert_to_01(i)
+# for i in range(10 , 100, 5):
+#     print(f"{i}:  ", end="")
+#     convert_to_01(i)
