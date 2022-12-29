@@ -11,7 +11,7 @@ import random
 a = [1.1, 1.2, 3.1, 5, 10.01]
 print(a)
 
-max = 0
+max = (a[0]*100)%100
 min = (a[0]*100)%100
 for i in a:
   if type(i) != int:
