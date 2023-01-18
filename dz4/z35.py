@@ -10,8 +10,6 @@ list2 = file.file_read(file2)
 
 
 def sia(i,list):   #splitting into arguments / дробление на аргументы
-    a = list[i].split(" ")
-    k = int(a[0].split("**")[1])
     str = list[i].split(" + ")
     str[-1] = str[-1].replace(" = 0","")
     return str
@@ -46,7 +44,6 @@ def create_new_mch(list1,list2):
     return new_result_list
 
 result_list = create_new_mch(list1,list2)
-
 path = "result.txt"
 
 for i in range(len(result_list)):
