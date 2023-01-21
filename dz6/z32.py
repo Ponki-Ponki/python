@@ -9,6 +9,7 @@ b = int(input())
 def degree_of_number(a,b):
 	if b>0:
 		return a*degree_of_number(a,b-1)
-	else: return 1
+	elif b == 0: return 1
+	else: return 1/(a*degree_of_number(a,-b-1))
 
 print(f"A = {a}; B = {b} -> {degree_of_number(a,b)}")
