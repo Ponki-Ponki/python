@@ -11,4 +11,4 @@ def degree_of_number(a,b):
 		return a*degree_of_number(a,b-1)
 	else: return 1
 
-print(f"{a} в степени {b} = {degree_of_number(a,b)}")
+print(f"A = {a}; B = {b} -> {degree_of_number(a,b)}")
