@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import random
 
-
+# bot name    @py_32_bot (https://t.me/py_32_bot)
 bot = telebot.TeleBot("5851996036:AAES5jL097Lq30krvr6r8npoh1dBy4GcBoI")
 
 sweets = 200
